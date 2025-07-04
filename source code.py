@@ -1,8 +1,7 @@
 import time
 
 from plyer import notification
-
-
+# install plyer if it not avaliable
 def remind_to_drink_water():
     while True:
         notification.notify(
@@ -11,8 +10,6 @@ def remind_to_drink_water():
            app_icon = "D:\drinking water  remainder\glassofwater_84019 (1).png",
             timeout=10
         )
-        time.sleep(60)  # waits 1 hour
+        time.sleep(60*60)  # waits 1 houror or can change
 
 if __name__ == "__main__":
-    remind_to_drink_water()
-print()
